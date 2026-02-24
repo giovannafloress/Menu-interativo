@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="telasgrandes.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+</head>
+<body onresize="mudoutamanho()">
+    <header>
+        <h1>Meu site</h1>
+        <span id="menu" class="material-symbols-outlined" onclick="clickmenu()">menu</span>
+        <menu id="itensdomenu">
+            <ul>
+                <li><a href="#"><strong>Opção 1</strong></a></li>
+                <li><a href="#"><strong>Opção 2</strong></a></li>
+                <li><a href="#"><strong>Opção 3</strong></a></li>
+                <li><a href="#"><strong>Opção 4</strong></a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, cumque! Corrupti ipsa minima officiis, quis sequi in suscipit vel reiciendis error quod obcaecati explicabo. Nobis mollitia facere atque excepturi magnam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque eligendi reprehenderit expedita sint aspernatur veritatis officia quod nulla maxime hic obcaecati vero voluptas at, dignissimos perferendis optio ducimus quasi!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, repellendus? Libero impedit quas cum ad consequuntur, culpa dolores non saepe iure aliquam totam laudantium eos cumque dicta explicabo qui temporibus.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, cumque! Corrupti ipsa minima officiis, quis sequi in suscipit vel reiciendis error quod obcaecati explicabo. Nobis mollitia facere atque excepturi magnam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque eligendi reprehenderit expedita sint aspernatur veritatis officia quod nulla maxime hic obcaecati vero voluptas at, dignissimos perferendis optio ducimus quasi!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, repellendus? Libero impedit quas cum ad consequuntur, culpa dolores non saepe iure aliquam totam laudantium eos cumque dicta explicabo qui temporibus. 
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. A tenetur eveniet incidunt fugit, ullam ex ipsam dolorum! Laudantium, facilis, earum soluta, mollitia quam temporibus nam accusamus atque dicta debitis minus.
+            </p>
+        </article>
+    </main>
+    
+    <script>
+        function clickmenu() {
+            if (itensdomenu.style.display == 'block') {
+                itensdomenu.style.display = 'none' // se estao aparecendo, esconde
+            } else {
+                itensdomenu.style.display = 'block' //se não estao aparecendo (none), aparece
+            }
+        }
+
+        function mudoutamanho() {
+            if (window.innerwidth >= 768) {
+                itensdomenu.style.display = 'block'
+            } else {
+                itensdomenu.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>

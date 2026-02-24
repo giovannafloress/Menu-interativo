@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: rgba(83, 83, 184, 0.39);
+}
+
+header {
+    background-color: rgb(2, 0, 128);
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.61);
+    padding: 10px;
+    font-size: 2.5em;
+}
+
+menu {
+    display: none;
+    background-color: rgb(157, 159, 255);
+}
+
+menu > ul > li > a {
+    text-decoration: none;
+    color:  rgb(2, 0, 128);
+    display: block;
+    padding: 10px;
+    border-top: 2px solid  rgb(2, 0, 128);
+    background-color: rgb(157, 159, 255);
+}
+
+menu > ul > li > a:hover {
+    background-color: rgb(2, 0, 128);
+    color: white;
+}
+
+main {
+    width: 85vw;
+    background-color: white;
+    margin: auto;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.322);
+}
+
+article > h2 {
+    color:rgb(2, 0, 128);
+    padding: 10px;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.349);
+}
+
+article > p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    text-indent: 30px;
+
+}
+
+span#menu {
+    color: white;
+    cursor: pointer;
+    background-color: rgb(2, 0, 128);
+    display: block;
+}
+
+span#menu:hover {
+    color: rgb(2, 0, 128);
+    background-color:white;
+}
